@@ -4,7 +4,8 @@
 2. Clone the repo
 3. run:
 ```
-    cd mariadb_galera_vagrant; vagrant up
+cd mariadb_galera_vagrant
+vagrant up
 ```
 
 **Files:**
