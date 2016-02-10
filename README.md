@@ -1,5 +1,4 @@
- ** The simplest way I can find to setup a MariaDB cluster with Galera
-
+**The simplest way I can find to setup a MariaDB cluster with Galera**
 
 =========================
  * VagrantFile   --> setup CentOS VM (6.7)
