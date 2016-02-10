@@ -12,3 +12,5 @@ vagrant up
  * VagrantFile   --> setup CentOS VM (6.7)
  * bootstrap.sh  --> setup MariaDB 10.1.10, which comes with Galera.
 
+**Troubleshooting**
+1. Make sure you have latest version of Vagrant and VirtualBox.
