@@ -36,12 +36,20 @@ mkdir -p /etc/my.cnf.d
 export db1_ip=192.168.50.101
 export db2_ip=192.168.50.102
 export db3_ip=192.168.50.103
+# set HOST_IP as sst_receive_address
 if [ $HOSTNAME == "db1" ]; then
   export HOST_IP=$db1_ip
 elif [ $HOSTNAME == "db2" ]; then
   export HOST_IP=$db2_ip
 elif [ $HOSTNAME == "db3" ]; then
   export HOST_IP=$db3_ip
+fi
+
+# set ip list for cluster_address -- we need a first node, db1, which is different.
+if [ $HOSTNAME == "db1" ]; then
+  export ip_list=""
+else
+  export ip_list=$db1_ip,$db2_ip,$db3_ip
 fi
 
 
@@ -58,7 +66,7 @@ innodb_autoinc_lock_mode=2
 innodb_doublewrite=1
 wsrep_provider=/usr/lib64/galera/libgalera_smm.so
 wsrep_cluster_name=my_cluster
-wsrep_cluster_address=gcomm://$db1_ip,$db2_ip,$db3_ip
+wsrep_cluster_address=gcomm://$ip_list
 wsrep_slave_threads=2
 wsrep_sst_method=rsync
 wsrep_sst_auth=vagrant:vagrant
