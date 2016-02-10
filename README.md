@@ -1,7 +1,7 @@
 **How to**
 =========================
 1. Install Vagrant.
-2. Clone the repo, default to "mariadb_galera_vagrant"
+2. Clone the repo.
 3. run:
 ```
 cd mariadb_galera_vagrant
