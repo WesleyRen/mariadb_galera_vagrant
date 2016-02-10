@@ -1,7 +1,7 @@
 **How to**
 =========================
-1. Install Vagrant.
-2. Clone the repo.
+1. Install [Vagrant](https://www.vagrantup.com/) & [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. Clone this repo.
 3. run:
 ```
 cd mariadb_galera_vagrant
