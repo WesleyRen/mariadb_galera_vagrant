@@ -14,3 +14,7 @@ vagrant up
 
 **Troubleshooting**
 1. Make sure you have latest version of Vagrant and VirtualBox.
+
+**Other notes**
+1. To shutdown, use: "vagrant halt db1 db2 db3"
+2. To start, use: "vagrant up db1; vagrant up db2 db3" -- we need to bring up db1 first as first node.
