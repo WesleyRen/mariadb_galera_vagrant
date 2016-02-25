@@ -4,7 +4,7 @@
 2. Clone this repo.
 3. run:
 ```
-cd <path to this dir>
+cd [pub-repo|priv-repo] # choose one, if you don't know, use pub_repo
 vagrant up
 ```
 
