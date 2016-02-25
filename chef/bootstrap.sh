@@ -16,7 +16,7 @@ echo "baseurl = http://10.65.228.71/data/mariadb/mariadb-10.1.10/yum/centos/6.6/
 echo "gpgkey=http://10.65.228.71/data/mariadb/mariadb-10.1.10/yum/centos/6.6/x86_64/RPM-GPG-KEY-MariaDB" >> /etc/yum.repos.d/MariaDB.repo
 echo "gpgcheck=1"                              >> /etc/yum.repos.d/MariaDB.repo
 
-yes | yum install MariaDB-server MariaDB-client
+yum -y install MariaDB-server MariaDB-client
 #yes | yum install http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm
 
 echo "#
